@@ -1,0 +1,11 @@
+﻿@page "/"
+@inject ViewModels.TestList TL
+
+<PageTitle>Index</PageTitle>
+
+<ol>
+@foreach(var tst in TL.Testovi)
+{
+    <li>@tst.NekiTekst -- @tst.NekiBroj</li>
+}
+</ol>
